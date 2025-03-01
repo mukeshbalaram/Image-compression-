@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A free online tool to compress, resize, crop, and optimize images dynamically. Choose your compression level, convert formats, and reduce image size without losing quality.">
   <meta name="keywords" content="image compression, online image optimizer, compress jpg, compress png, webp converter, free image tools, SEO-friendly image compressor">
-  <meta name="author" content="Your Name">
+  <meta name="author" content="Akshay Sharma">
   <meta property="og:title" content="Free Online Image Compression Tool">
   <meta property="og:description" content="Compress and optimize images dynamically with adjustable compression levels. Convert formats like JPG, PNG, and WebP. Perfect for web developers and designers.">
-  <meta property="og:image" content="https://yourwebsite.com/path-to-thumbnail.jpg">
-  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:image" content="https://imgcompress.com/path-to-thumbnail.jpg">
+  <meta property="og:url" content="https://imgcompress.com">
   <meta name="twitter:card" content="summary_large_image">
   <title>Image Compression Tool</title>
   <style>
@@ -60,7 +60,7 @@
     }
 
     header h1 {
-      font-size: 4rem;
+      font-size: 3.4rem;
       font-weight: bold;
       text-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
       animation: fadeIn 2s ease-in-out;
@@ -440,7 +440,7 @@
     /* Footer */
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 20px;
       background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: white;
       margin-top: 60px;
@@ -474,6 +474,333 @@
     body.dark-mode .compression-option-mobile.active {
       background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: white;
+    }
+
+    /* Blog Section Styling */
+    .blog-section {
+      margin: 40px 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #f9f9f9, #e0e7ff);
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-section:hover {
+      transform: scale(1.02);
+    }
+
+    .blog-section::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: skewX(-20deg);
+      transition: left 0.5s ease;
+    }
+
+    .blog-section:hover::after {
+      left: 100%;
+    }
+
+    .blog-section h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #007BFF;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .blog-section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .blog-section a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-section a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Privacy Policy Section Styling */
+    .privacy-policy {
+      margin: 40px 0;
+      padding: 30px;
+      background: linear-gradient(135deg, #f9f9f9, #e0e7ff);
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .privacy-policy:hover {
+      transform: scale(1.02);
+    }
+
+    .privacy-policy::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: skewX(-20deg);
+      transition: left 0.5s ease;
+    }
+
+    .privacy-policy:hover::after {
+      left: 100%;
+    }
+
+    .privacy-policy h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #007BFF;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .privacy-policy p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .privacy-policy ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .privacy-policy li {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    /* Contact Us Modal Styling */
+    .contact-us-button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-us-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-us-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      animation: fadeInModal 0.5s ease-in-out;
+    }
+
+    @keyframes fadeInModal {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .contact-us-modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      animation: slideUpModal 0.5s ease-in-out;
+    }
+
+    @keyframes slideUpModal {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .contact-us-modal h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+
+    .contact-us-modal label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .contact-us-modal input,
+    .contact-us-modal textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .contact-us-modal input:focus,
+    .contact-us-modal textarea:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    .contact-us-modal button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-us-modal button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 2rem;
+      color: #aaa;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .close-modal:hover {
+      color: #fff;
+    }
+
+    /* Contact Information Section Styling */
+    .contact-info {
+      margin: 40px 0;
+      padding: 30px;
+      background: linear-gradient(135deg, #f9f9f9, #e0e7ff);
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-info:hover {
+      transform: scale(1.02);
+    }
+
+    .contact-info::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: skewX(-20deg);
+      transition: left 0.5s ease;
+    }
+
+    .contact-info:hover::after {
+      left: 100%;
+    }
+
+    .contact-info h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #007BFF;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .contact-info p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .contact-info a {
+      display: inline-block;
+      margin-right: 15px;
+            font-size: 1.2rem;
+      color: #007BFF;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #0056b3;
+    }
+
+    /* Responsive Design for Blog and Privacy Sections */
+    @media (max-width: 768px) {
+      .blog-section, .privacy-policy, .contact-info {
+        padding: 15px;
+      }
+
+      .blog-section h3, .privacy-policy h2, .contact-info h2 {
+        font-size: 1.5rem;
+      }
+
+      .blog-section p, .privacy-policy p, .contact-info p {
+        font-size: 1rem;
+      }
     }
 
     /* Additional Animations */
@@ -663,12 +990,131 @@
       <p>Welcome to our Image Compression Tool. By using this service, you agree to the following terms:</p>
       <p>1. You are responsible for ensuring that the images you upload comply with applicable laws and do not infringe on any third-party rights.</p>
       <p>2. We do not store or share your images. All processing is done locally in your browser.</p>
-      <p>For more details, please read our <a href="https://yourwebsite.com/terms" target="_blank">full terms and conditions</a>.</p>
+      <p>For more details, please read our <a href="#privacy-policy">Privacy Policy</a>.</p>
     </section>
+
+    <!-- Blog Sections -->
+    <section class="blog-section fade-in">
+      <h3>Why Image Compression Matters</h3>
+      <p>Learn why compressing images is essential for faster website loading times and better user experience.</p>
+      <a href="#">Read More</a>
+    </section>
+
+    <section class="blog-section fade-in">
+      <h3>Top 5 Tools for Image Optimization</h3>
+      <p>Discover the best tools available for optimizing images without compromising quality.</p>
+      <a href="#">Read More</a>
+    </section>
+
+    <section class="blog-section fade-in">
+      <h3>How to Choose the Right Compression Level</h3>
+      <p>Understand the differences between low, medium, and high compression levels and when to use them.</p>
+      <a href="#">Read More</a>
+    </section>
+
+    <section class="blog-section fade-in">
+      <h3>The Impact of Large Images on SEO</h3>
+      <p>Explore how large image files can hurt your search engine rankings and what you can do about it.</p>
+      <a href="#">Read More</a>
+    </section>
+
+    <section class="blog-section fade-in">
+      <h3>Best Practices for Web Images</h3>
+      <p>Follow these tips to ensure your images are optimized for both speed and visual appeal.</p>
+      <a href="#">Read More</a>
+    </section>
+
+    <section class="blog-section fade-in">
+      <h3>Understanding Image Formats: JPG, PNG, and WebP</h3>
+      <p>Learn about the strengths and weaknesses of different image formats and when to use each one.</p>
+      <a href="#">Read More</a>
+    </section>
+
+    <section class="blog-section fade-in">
+      <h3>How to Reduce Image Size Without Losing Quality</h3>
+      <p>Discover techniques to shrink image file sizes while maintaining their visual integrity.</p>
+      <a href="#">Read More</a>
+    </section>
+
+    <section class="blog-section fade-in">
+      <h3>The Role of AI in Image Compression</h3>
+      <p>Explore how artificial intelligence is revolutionizing the way we compress and optimize images.</p>
+      <a href="#">Read More</a>
+    </section>
+
+    <section class="blog-section fade-in">
+      <h3>Common Mistakes to Avoid in Image Optimization</h3>
+      <p>Find out the pitfalls to avoid when optimizing images for the web.</p>
+      <a href="#">Read More</a>
+    </section>
+
+    <section class="blog-section fade-in">
+      <h3>Future Trends in Image Compression</h3>
+      <p>Get a glimpse into the future of image compression technologies and their potential impact.</p>
+      <a href="#">Read More</a>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section class="privacy-policy fade-in" id="privacy-policy">
+      <h2>Privacy Policy</h2>
+      <p>At imgcompress.com, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our Image Compression Tool.</p>
+      <h3>Information We Collect</h3>
+      <ul>
+        <li>We do not collect or store any images uploaded to our tool. All processing occurs locally in your browser.</li>
+        <li>No personal data is transmitted to our servers during the compression process.</li>
+      </ul>
+      <h3>How We Use Your Information</h3>
+      <p>We do not collect or use any personal information. The tool operates entirely offline within your browser.</p>
+      <h3>Cookies</h3>
+      <p>We may use cookies to enhance your experience on our website. These cookies do not store personal data and are used solely for analytics and functionality purposes.</p>
+      <h3>Third-Party Services</h3>
+      <p>We use third-party services like Google AdSense for advertisements. These services may collect anonymized data for advertising purposes. For more information, refer to their respective privacy policies.</p>
+      <h3>Changes to This Policy</h3>
+      <p>We reserve the right to update this Privacy Policy at any time. Any changes will be reflected on this page.</p>
+      <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto: akshayofficial7843@gmail.com">akshayofficial7843@gmail.com</a>.</p>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info fade-in">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, feel free to reach out to us using the information below:</p>
+      <p><strong>Email:</strong> <a href="mailto: akshayofficial7843@gmail.com">akshayofficial7843@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+917843060872">+91 78430 60872</a></p>
+      <p><strong>Follow Us:</strong>
+        <a href="https://facebook.com/yourpage" target="_blank">Facebook</a>
+        <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+        <a href="https://instagram.com/officialakshay773" target="_blank">Instagram</a>
+      </p>
+    </section>
+
+    <!-- Contact Us Modal -->
+    <div class="contact-us-modal" id="contactUsModal">
+      <div class="contact-us-modal-content">
+        <span class="close-modal" onclick="closeContactModal()">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contact Us Button -->
+    <div style="text-align: center; margin-top: 40px;">
+      <button class="contact-us-button" onclick="openContactModal()">Send Us a Message</button>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2023 Your Website. All rights reserved.</p>
+    <p>&copy; 2025 image compression. All rights reserved.</p>
   </footer>
 
   <script>
@@ -787,7 +1233,7 @@
             <p><strong>Original Size:</strong> ${(originalSize / 1024).toFixed(2)} KB</p>
             <p><strong>Compressed Size:</strong> ${(compressedSize / 1024).toFixed(2)} KB</p>
             <p><strong>Reduction:</strong> ${reduction.toFixed(2)}%</p>
-          `;
+                      `;
 
           loadingSpinner.style.display = 'none';
 
@@ -810,6 +1256,36 @@
     function toggleTheme() {
       document.body.classList.toggle('dark-mode');
     }
+
+    // Contact Us Modal Functions
+    const contactModal = document.getElementById('contactUsModal');
+
+    function openContactModal() {
+      contactModal.style.display = 'flex';
+    }
+
+    function closeContactModal() {
+      contactModal.style.display = 'none';
+    }
+
+    // Handle Form Submission
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Simulate sending the message (replace with actual backend logic)
+      console.log('Name:', name);
+      console.log('Email:', email);
+      console.log('Message:', message);
+
+      alert('Thank you for contacting us! We will get back to you soon.');
+
+      // Reset form and close modal
+      document.getElementById('contactForm').reset();
+      closeContactModal();
+    });
   </script>
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
